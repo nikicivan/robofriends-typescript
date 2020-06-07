@@ -1,14 +1,18 @@
 {
   "name": "typetype",
+  "homepage": "https://nikicivan.github.io/robofriends-typescript",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^3.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts-ts": "2.14.0",
     "tachyons": "^4.12.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
